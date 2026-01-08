@@ -1,143 +1,83 @@
-ML Internship – Week 3
-Regression Models, Overfitting & Model Persistence
-This repository contains Week 3 tasks of my Machine Learning Internship.
-The focus of this week is to deeply understand regression models, their behavior, common pitfalls like overfitting, and how trained models are saved and reused in real-world systems.
+# 🤖 Machine Learning Internship – Week 3
+## Regression Models, Overfitting & Model Persistence
 
-Overview of Tasks
-Week 3 covers the following major concepts:
-    • Linear Regression from scratch (without sklearn)
-    • Multiple Linear Regression using sklearn
-    • Polynomial Regression and Overfitting analysis
-    • Model Persistence (Saving & Loading models)
-Each task includes:
-    • Clean Python implementation
-    • Evaluation metrics
-    • Visualizations
-    • Conceptual understanding
+Welcome to the documentation for Week 3 of my ML Internship. This week was dedicated to mastering the core mechanics of regression, diagnosing model behavior (Bias vs. Variance), and implementing industry-standard deployment practices.
 
-Task 3.1: Linear Regression from Scratch (Gradient Descent)
-Objective
-To understand how linear regression works internally, without using any machine learning library.
-What was implemented
-    • Synthetic dataset generation using NumPy
-    • Custom LinearRegression class
-    • Manual implementation of:
-        ◦ Weight and bias initialization
-        ◦ Mean Squared Error (MSE) cost function
-        ◦ Gradient Descent optimization
-    • Manual calculation of R² score
-    • Visualization of results
-Key Outputs
-    • Data points vs regression line
-    • Cost (MSE) vs iterations graph
-Visualizations
-<img src="Task_3_1_Linear_Regression_From_Scratch/plots/linear_regression_plot.png" width="400"> 
-<img src="Task_3_1_Linear_Regression_From_Scratch/plots/cost_convergence.png" width="400"> 
-Learning Outcome
-This task helped in understanding:
-    • How gradient descent updates parameters
-    • Why cost decreases over iterations
-    • How a model learns from data mathematically
+---
 
-Task 3.2: Multiple Linear Regression using sklearn
-Objective
-To apply regression on real-world multi-feature data using an industry-standard library.
-Dataset
-    • California Housing Dataset (sklearn)
-What was implemented
-    • Data loading using sklearn
-    • Train-test split
-    • Model training using LinearRegression
-    • Model evaluation using:
-        ◦ MAE
-        ◦ MSE
-        ◦ RMSE
-        ◦ R² Score
-    • Visualization of predictions and residuals
-    • Saving model weights as JSON
-Visualizations
-<img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/actual_vs_predicted.png" width="400"> 
-<img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/residuals.png" width="400"> 
-Learning Outcome
-This task demonstrated:
-    • How multiple features affect predictions
-    • Why R² is often lower on real datasets
-    • How residual plots help diagnose model behavior
+## Overview of Tasks
+The focus was on moving from high-level APIs to internal mechanics and understanding how to make models production-ready.
+* **Linear Regression from scratch:** Mathematical implementation of Gradient Descent.
+* **Multiple Linear Regression:** Handling multi-dimensional data with `sklearn`.
+* **Polynomial Regression:** Analyzing model complexity and the overfitting phenomenon.
+* **Model Persistence:** Strategies for saving and loading trained models.
 
-Task 3.3: Polynomial Regression & Overfitting
-Objective
-To understand model complexity, underfitting, overfitting, and the bias–variance tradeoff.
-What was implemented
-    • Synthetic non-linear dataset
-    • Polynomial regression models with degrees:
-        ◦ 1, 2, 3, 5, and 10
-    • Training and testing error comparison
-    • Learning curves
-    • Visual comparison of all models
-Visualizations
-<img src="Task_3_3_Polynomial_Regression/plots/models_comparison.png" width="400"> 
-<img src="Task_3_3_Polynomial_Regression/plots/learning_curves.png" width="400"> 
-Overfitting Analysis
-    • Low-degree models underfit the data
-    • High-degree models achieve very low training error but higher test error
-    • Degree 3 provides the best balance between bias and variance
-Learning Outcome
-This task clearly demonstrated:
-    • Why more complex models are not always better
-    • How overfitting can be detected using metrics and plots
-    • The importance of generalization
+---
 
-Task 3.4: Model Persistence – Saving & Loading Models
-Objective
-To learn how trained models are saved, loaded, and reused in production systems.
-What was implemented
-    • Training a regression model
-    • Saving the model in three formats:
-        ◦ Pickle (.pkl)
-        ◦ Joblib (.joblib)
-        ◦ JSON (weights only)
-    • Loading each format and making predictions
-    • Measuring:
-        ◦ File sizes
-        ◦ Model loading times
-    • Comparing all formats
-Model Persistence Comparison
-Format
-File Size (bytes)
-Load Time (sec)
-Notes
-Pickle
-(434)
-(0.0)
-Python-native
-Joblib
-(576)
-(0.0)
-Optimized for ML
-JSON
-(62)
-(0.0)
-Stores only Weights
-Conclusion
-    • Joblib offers the best balance of speed and usability for ML models
-    • JSON is lightweight and suitable for cross-platform deployment
-    • Pickle is simple but less flexible for production use
+## Task 3.1: Linear Regression from Scratch
+**Objective:** To understand the internal optimization process without using pre-built libraries.
 
-Tools & Libraries Used
-    • Python
-    • NumPy
-    • Matplotlib
-    • scikit-learn
-    • Pickle, Joblib, JSON
+* **Logic:** Implemented a custom class featuring Weight & Bias initialization.
+* **Optimization:** Manual Gradient Descent to minimize the Mean Squared Error (MSE).
+* **Metrics:** Custom calculation of $R^2$ Score.
 
-Final Learning Summary
-By completing Week 3, I gained a strong understanding of:
-    • How regression models work internally
-    • How to evaluate and visualize model performance
-    • How overfitting occurs and how to detect it
-    • How trained models are saved and reused in real applications
-This week focused not only on implementation, but on thinking like a machine learning engineer.
+| Regression Line | Cost Convergence |
 
-Author
-Hassan Raza
-Machine Learning Intern
+| <img src="Task_3_1_Linear_Regression_From_Scratch/plots/linear_regression_plot.png" width="380"> | <img src="Task_3_1_Linear_Regression_From_Scratch/plots/cost_convergence.png" width="380"> |
+
+---
+
+## Task 3.2: Multiple Linear Regression (sklearn)
+**Objective:** Applying regression to real-world datasets using industry-standard tools.
+
+* **Dataset:** California Housing Dataset.
+* **Evaluation:** Comprehensive analysis using MAE, MSE, RMSE, and $R^2$.
+* **Key Insight:** Residual plots were used to identify if the linear assumption holds true for the dataset.
+
+| Actual vs. Predicted | Residual Analysis |
+
+| <img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/actual_vs_predicted.png" width="380"> | <img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/residuals.png" width="380"> |
+
+---
+
+## Task 3.3: Polynomial Regression & Overfitting
+**Objective:** Visualizing the Bias-Variance tradeoff through varying model degrees.
+
+* **Analysis:** Comparison of degrees 1, 2, 3, 5, and 10.
+* **Outcome:** * **Underfitting:** Seen in Degree 1 (High Bias).
+    * **Overfitting:** Seen in Degree 10 (High Variance/Low Generalization).
+    * **Optimal:** Degree 3 provided the best fit for the synthetic dataset.
+
+| Model Comparison | Learning Curves |
+
+| <img src="Task_3_3_Polynomial_Regression/plots/models_comparison.png" width="380"> | <img src="Task_3_3_Polynomial_Regression/plots/learning_curves.png" width="380"> |
+
+---
+
+## Task 3.4: Model Persistence
+**Objective:** Learning how to bridge the gap between training and production.
+
+I compared three major formats for saving and loading models:
+
+| Format | File Size | Load Time | Best For |
+
+| **Pickle (.pkl)** | 434 bytes | 0.0s | Standard Python objects |
+| **Joblib (.joblib)** | 576 bytes | 0.0s | Large NumPy arrays/ML models |
+| **JSON** | 62 bytes | 0.0s | Lightweight, cross-platform weights |
+
+---
+
+## Final Learning Summary
+By completing these tasks, I have developed a strong intuition for:
+1.  How **Gradient Descent** updates parameters to reach the global minimum.
+2.  How to use **Residual Plots** to diagnose model health.
+3.  The critical importance of **Generalization** (avoiding overfitting).
+4.  How to efficiently **Serialize** models for real-world application.
+
+---
+
+### Tools & Libraries
+`Python` • `NumPy` • `Matplotlib` • `Scikit-Learn` • `Pickle` • `Joblib`
+
+**Author:** Hassan Raza  
+*Machine Learning Intern*
