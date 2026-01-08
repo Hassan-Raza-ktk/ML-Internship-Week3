@@ -31,7 +31,8 @@ Key Outputs
     • Data points vs regression line
     • Cost (MSE) vs iterations graph
 Visualizations
-<img src="Task_3_1_Linear_Regression_From_Scratch/plots/linear_regression_plot.png" width="400"> <img src="Task_3_1_Linear_Regression_From_Scratch/plots/cost_convergence.png" width="400"> 
+<img src="Task_3_1_Linear_Regression_From_Scratch/plots/linear_regression_plot.png" width="400"> 
+<img src="Task_3_1_Linear_Regression_From_Scratch/plots/cost_convergence.png" width="400"> 
 Learning Outcome
 This task helped in understanding:
     • How gradient descent updates parameters
@@ -55,7 +56,8 @@ What was implemented
     • Visualization of predictions and residuals
     • Saving model weights as JSON
 Visualizations
-<img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/actual_vs_predicted.png" width="400"> <img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/residuals.png" width="400"> 
+<img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/actual_vs_predicted.png" width="400"> 
+<img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/residuals.png" width="400"> 
 Learning Outcome
 This task demonstrated:
     • How multiple features affect predictions
@@ -73,7 +75,8 @@ What was implemented
     • Learning curves
     • Visual comparison of all models
 Visualizations
-<img src="Task_3_3_Polynomial_Regression/plots/models_comparison.png" width="400"> <img src="Task_3_3_Polynomial_Regression/plots/learning_curves.png" width="400"> 
+<img src="Task_3_3_Polynomial_Regression/plots/models_comparison.png" width="400"> 
+<img src="Task_3_3_Polynomial_Regression/plots/learning_curves.png" width="400"> 
 Overfitting Analysis
     • Low-degree models underfit the data
     • High-degree models achieve very low training error but higher test error
