@@ -23,7 +23,7 @@ The focus was on moving from high-level APIs to internal mechanics and understan
 
 | Regression Line | Cost Convergence |
 
-| <img src="Task_3_1_Linear_Regression_From_Scratch/plots/linear_regression_plot.png" width="380"> | <img src="Task_3_1_Linear_Regression_From_Scratch/plots/cost_convergence.png" width="380"> |
+| <img src="Task_3_1_Linear_Regression_Scratch/plots/linear_regression_plot.png" width="380"> | <img src="Task_3_1_Linear_Regression_Scratch/plots/cost_convergence.png" width="380"> |
 
 ---
 
