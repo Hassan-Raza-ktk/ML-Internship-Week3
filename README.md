@@ -36,7 +36,7 @@ The focus was on moving from high-level APIs to internal mechanics and understan
 
 | Actual vs. Predicted | Residual Analysis |
 
-| <img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/actual_vs_predicted.png" width="380"> | <img src="Task_3_2_Multiple_Linear_Regression_sklearn/plots/residuals.png" width="380"> |
+| <img src="Task_3_2_Multiple_Linear_regression_sklearn/plots/actual_vs_predicted.png" width="380"> | <img src="Task_3_2_Multiple_Linear_regression_sklearn/plots/residuals.png" width="380"> |
 
 ---
 
