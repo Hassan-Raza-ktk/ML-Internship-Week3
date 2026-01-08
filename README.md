@@ -1,4 +1,4 @@
-# 🤖 Machine Learning Internship – Week 3
+# Machine Learning Internship – Week 3
 ## Regression Models, Overfitting & Model Persistence
 
 Welcome to the documentation for Week 3 of my ML Internship. This week was dedicated to mastering the core mechanics of regression, diagnosing model behavior (Bias vs. Variance), and implementing industry-standard deployment practices.
